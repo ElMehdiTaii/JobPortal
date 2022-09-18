@@ -15,7 +15,7 @@ namespace JobPortal.Repositories
         private RecruiterRepository _recruiterRepository;
 
         public IRecruiterRepository RecruiterRepository
-        {
+        { 
             get
             {
                 if(_recruiterRepository == null)
