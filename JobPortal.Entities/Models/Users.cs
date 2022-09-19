@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace JobPortal.Entities.Models
 {
-    public class User : BaseModel
+    public class Users : BaseModel
     {
-
-        public User()
+        public Users()
         {
             Apply = new HashSet<Apply>();
         }

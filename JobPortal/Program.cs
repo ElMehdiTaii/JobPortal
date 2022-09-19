@@ -1,13 +1,14 @@
+using JobPortal;
+using JobPortal.Entities;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 
-//builder.Services.AddAuthentication()
-//    .AddMicrosoftAccount(microsoftOptions => { ... })
-//    .AddGoogle(googleOptions => { ... })
-//    .AddTwitter(twitterOptions => { ... })
-//    .AddFacebook(facebookOptions => { ... });
+builder.Services.ConfigureEntitiesRegistrySrevice(builder.Configuration);
+
+builder.Services.ConfigureRepositoryRegistrySrevice();
 
 var app = builder.Build();
 

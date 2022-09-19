@@ -11,7 +11,7 @@ namespace JobPortal.Entities.Models
         public int UserId { get; set; }
         public int OfferId { get; set; }
 
-        public User User { get; set; }
+        public Users User { get; set; }
         public Offer Offer { get; set; }
     }
 }

@@ -12,7 +12,7 @@
         public int Country { get; set; }
         public int City { get; set; }
         public DateTime CreatedDate { get; set; }
-        public int IsDelete { get; set; }
+        public bool IsDelete { get; set; }
         public Recruiter Recruiter { get; set; }
         public ICollection<Apply> Apply { get; set; }
     }
