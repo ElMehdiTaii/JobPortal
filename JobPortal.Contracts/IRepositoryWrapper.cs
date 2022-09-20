@@ -10,6 +10,10 @@ namespace JobPortal.Contracts
     public interface IRepositoryWrapper
     {
         IRecruiterRepository RecruiterRepository { get; }
+        IApplyRepository ApplyRepository { get; }
+        IOfferRepository OfferRepository { get; }
+        IRecruiterDetailsRepository RecruiterDetailsRepository { get; }
+        IUsersRepository UsersRepository { get; }
         Task<bool> SaveAsync();
     }
 }

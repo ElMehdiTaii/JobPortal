@@ -1,5 +1,6 @@
 ﻿using JobPortal.Contracts;
 using JobPortal.Entities.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace JobPortal.Repositories
 {
@@ -7,6 +8,11 @@ namespace JobPortal.Repositories
     {
         public UsersRepository(RepositoryContext repositoryContext) : base(repositoryContext)
         {
+        }
+
+        public async Task<IEnumerable<Users>> GetAllUsers()
+        {
+            return await FindAll().ToListAsync();
         }
     }
 }

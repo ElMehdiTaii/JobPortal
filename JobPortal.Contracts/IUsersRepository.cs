@@ -9,6 +9,6 @@ namespace JobPortal.Contracts
 {
     public interface IUsersRepository : IRepositoryBase<Users>
     {
-
+        Task<IEnumerable<Users>> GetAllUsers();
     }
 }

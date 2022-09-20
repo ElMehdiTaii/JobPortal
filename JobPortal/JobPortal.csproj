@@ -15,7 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\JobPortal.Contracts\JobPortal.Contracts.csproj" />
     <ProjectReference Include="..\JobPortal.Entities\JobPortal.Entities.csproj" />
+    <ProjectReference Include="..\JobPortal.Repositories\JobPortal.Repositories.csproj" />
   </ItemGroup>
 
 </Project>
